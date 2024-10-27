@@ -1,0 +1,44 @@
+.personalInfo {
+  &__photo {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    &__mask {
+      animation: fade-in 2s ease-in-out;
+      animation-duration: 1s;
+      animation-delay: 1.750s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &__name {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  &__background {
+    animation: open-scale 1s ease-in-out;
+  }
+}
+
+@keyframes open-scale {
+  0% {
+    scale: 5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
