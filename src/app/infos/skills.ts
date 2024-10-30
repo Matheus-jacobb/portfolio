@@ -19,4 +19,4 @@ export const skills = [
     category: 'DevOps & Tools',
     items: ['Git', 'Docker', 'AWS', 'CI/CD', 'Agile/Scrum'],
   },
-];
+]

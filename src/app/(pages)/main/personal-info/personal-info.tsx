@@ -5,7 +5,9 @@ export function PersonalInfo({ className }: { className?: string }) {
   return (
     <section
       id="home"
-      className="flex items-center justify-center h-screen bg-primary px-4"
+      className={
+        'flex items-center justify-center h-screen bg-primary px-4 ' + className
+      }
     >
       <div className="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto space-y-8 md:space-y-0 md:space-x-12">
         <div className="flex flex-col items-center md:items-start animate-fadeInUp md:w-1/2">

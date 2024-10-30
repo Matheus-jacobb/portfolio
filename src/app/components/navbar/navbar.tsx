@@ -12,27 +12,42 @@ export function Navbar() {
     >
       <ul className="flex justify-end gap-8">
         <li>
-          <Link href="#home" className="text-text hover:text-highlight transition duration-300">
+          <Link
+            href="#home"
+            className="text-text hover:text-highlight transition duration-300"
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link href="#about" className="text-text hover:text-highlight transition duration-300">
+          <Link
+            href="#about"
+            className="text-text hover:text-highlight transition duration-300"
+          >
             Sobre
           </Link>
         </li>
         <li>
-          <Link href="#experience" className="text-text hover:text-highlight transition duration-300">
+          <Link
+            href="#experience"
+            className="text-text hover:text-highlight transition duration-300"
+          >
             Experiência
           </Link>
         </li>
         <li>
-          <Link href="#skills" className="text-text hover:text-highlight transition duration-300">
+          <Link
+            href="#skills"
+            className="text-text hover:text-highlight transition duration-300"
+          >
             Habilidades
           </Link>
         </li>
         <li>
-          <Link href="#projects" className="text-text hover:text-highlight transition duration-300">
+          <Link
+            href="#projects"
+            className="text-text hover:text-highlight transition duration-300"
+          >
             Projetos
           </Link>
         </li>

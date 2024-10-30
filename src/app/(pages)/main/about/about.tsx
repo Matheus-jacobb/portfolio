@@ -17,9 +17,9 @@ export function About({ className }: { className?: string }) {
         </p>
         <p className="text-lg leading-relaxed">
           Participei do desenvolvimento de mais de <strong>10 softwares</strong>{' '}
-          , sempre buscando entregar produtos que superem
-          expectativas. Acredito que minhas habilidades técnicas e experiência
-          em liderança agregam valor a qualquer equipe.
+          , sempre buscando entregar produtos que superem expectativas. Acredito
+          que minhas habilidades técnicas e experiência em liderança agregam
+          valor a qualquer equipe.
         </p>
       </div>
     </section>

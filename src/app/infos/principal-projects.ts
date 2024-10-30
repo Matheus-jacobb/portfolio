@@ -36,4 +36,4 @@ export const projects = [
     imgSrc: 'project3.jpg',
     frameworks: ['Back-end (NestJS)'],
   },
-];
+]

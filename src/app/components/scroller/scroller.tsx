@@ -1,30 +1,31 @@
-'use client';
+'use client'
 
-import React, { useEffect, useRef } from 'react';
-import { debounce } from 'next/dist/server/utils'; // Certifique-se de que isso está funcionando corretamente
+import React, { useEffect, useRef } from 'react'
+import { debounce } from 'next/dist/server/utils' // Certifique-se de que isso está funcionando corretamente
 
 export default function Scroller({ children }: { children: React.ReactNode }) {
-  const containerRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    const container = containerRef.current;
+    const container = containerRef.current
 
-    if (!container) return;
+    if (!container) return
 
-    const handleWheel = debounce((e: WheelEvent) => { // Defina o tipo do evento
-      e.preventDefault();
-      const delta = e.deltaY * 0.8;
+    const handleWheel = debounce((e: WheelEvent) => {
+      // Defina o tipo do evento
+      e.preventDefault()
+      const delta = e.deltaY * 0.8
 
       container.scrollBy({
         top: delta,
         behavior: 'smooth',
-      });
-    }, 100);
+      })
+    }, 100)
 
-    container.addEventListener('wheel', handleWheel);
+    container.addEventListener('wheel', handleWheel)
 
-    return () => container.removeEventListener('wheel', handleWheel);
-  }, []);
+    return () => container.removeEventListener('wheel', handleWheel)
+  }, [])
 
   return (
     <div
@@ -37,5 +38,5 @@ export default function Scroller({ children }: { children: React.ReactNode }) {
         </div>
       ))}
     </div>
-  );
+  )
 }

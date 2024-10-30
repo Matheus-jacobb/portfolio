@@ -1,11 +1,8 @@
-import { skills } from '@/app/infos/skills';
+import { skills } from '@/app/infos/skills'
 
 export function Skills({ className }: { className?: string }) {
   return (
-    <section
-      id="skills"
-      className={'py-32 text-text ' + className}
-    >
+    <section id="skills" className={'py-32 text-text ' + className}>
       <h2 className="text-center text-3xl font-semibold mb-12">Habilidades</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {skills.map((skill, idx) => (
