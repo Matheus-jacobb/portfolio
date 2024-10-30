@@ -1,38 +1,32 @@
+import Me from '@/app/assets/Me.png'
 import Image from 'next/image'
-import HomeBackground from '../../../assets/HomeBackground.png'
-import Me from '../../../assets/Me.png'
-import MeMask from '../../../assets/MeMask.png'
-import styles from './styles.module.scss'
 
-export function PersonalInfo() {
+export function PersonalInfo({ className }: { className?: string }) {
   return (
-    <section className='bg-primary-400 w-full h-screen max-w-full relative overflow-hidden'>
-      <div className={`${styles.personalInfo__photo} relative z-10 left-[54vw] scale-[0.85] top-[4rem] opacity-0 animate-fade-in`}>
-
-        <Image
-          src={MeMask}
-          alt={'Mascara roxa de fundo'}
-          className={`${styles.personalInfo__photo__mask} opacity-0 absolute`}
-        />
-        <Image
-          src={Me}
-          className='absolute'
-          alt={'Foto pessoal'}
-          quality={100}
-          width={766}
-          height={755}
-        />
-      </div>
-
-      <Image
-        src={HomeBackground}
-        alt={'Fundo roxo'}
-        className={`${styles.personalInfo__background} absolute left-0 min-w-[120vw] h-[87vh] top-0 bottom-0 my-auto`}
-      />
-
-      <div className={`${styles.personalInfo__name} text-white absolute top-0 bottom-20 my-auto text-start h-fit left-28 text-5xl font-bold opacity-0`}>
-        <p>Hi, I'm Jacob</p>
-        <p>Nice to meet you</p>
+    <section
+      id="home"
+      className="flex items-center justify-center h-screen bg-primary px-4"
+    >
+      <div className="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto space-y-8 md:space-y-0 md:space-x-12">
+        <div className="flex flex-col items-center md:items-start animate-fadeInUp md:w-1/2">
+          <h1 className="text-5xl font-bold text-text md:text-6xl text-center md:text-left">
+            Matheus Jacob Bendel
+          </h1>
+          <p className="mt-4 text-lg text-accent md:text-xl text-center md:text-left">
+            Desenvolvedor Full Stack
+          </p>
+          <div className="mt-16 text-lg text-accent md:text-xl text-center md:text-left bg-white bg-opacity-10 rounded-lg p-5 text-center text-white">
+            <p>"Inteligência é a capacidade de se adaptar à mudança."</p>
+            <p className="mt-4  text-end text-sm">- Stephen Hawking</p>
+          </div>
+        </div>
+        <div className="md:w-1/2">
+          <Image
+            src={Me}
+            alt="Imagem de Matheus Jacob Bendel"
+            className="float rounded-full w-{34rem} h-{34rem} object-cover shadow-2xl transition-transform duration-300 transform hover:scale-105 bg-accent bg-opacity-5"
+          />
+        </div>
       </div>
     </section>
   )

@@ -8,34 +8,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary-400': 'var(--color-primary-400)'
+        primary: '#0F103F',
+        secondary: '#0e0f2e',
+        accent: '#C961DE',
+        text: '#ffffff',
+        'text-secondary': 'rgba(255,255,255,0.52)',
+        highlight: '#C961DE',
       },
       keyframes: {
-        'fade-in': {
+        fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
-        typing: {
-          "0%": {
-            width: "0%",
-            visibility: "hidden"
-          },
-          "100%": {
-            width: "100%"
-          }  
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(40px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        blink: {
-          "50%": {
-            borderColor: "transparent"
-          },
-          "100%": {
-            borderColor: "white"
-          }  
-        }
       },
       animation: {
-        typing: "typing 2s steps(20) alternate, blink .7s"
-      }
+        fadeIn: 'fadeIn 2s ease-in-out forwards',
+        fadeInUp: 'fadeInUp 500ms ease-out forwards',
+      },
     },
   },
   plugins: [],
