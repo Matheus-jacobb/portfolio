@@ -6,7 +6,8 @@ export function PersonalInfo({ className }: { className?: string }) {
     <section
       id="home"
       className={
-        'flex items-center justify-center min-h-screen bg-primary px-4 pt-4 pb-36 pb-0 sm:pt-32 md:pt-0 ' + className
+        'flex items-center justify-center min-h-screen bg-primary px-4 pt-4 pb-36 pb-0 sm:pt-32 md:pt-0 ' +
+        className
       }
     >
       <div className="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto space-y-8 md:space-y-0 md:space-x-12">

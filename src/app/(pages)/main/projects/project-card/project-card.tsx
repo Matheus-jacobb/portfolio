@@ -20,7 +20,10 @@ export function ProjectCard({
         alt={project.title}
         width={362}
         height={192}
-        className={ 'w-full h-48 object-cover rounded-t-lg bg-white sm:grayscale group-hover:grayscale-0 transition duration-300 ' + project.style }
+        className={
+          'w-full h-48 object-cover rounded-t-lg bg-white sm:grayscale group-hover:grayscale-0 transition duration-300 ' +
+          project.style
+        }
       />
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-accent text-xl font-semibold mb-2">

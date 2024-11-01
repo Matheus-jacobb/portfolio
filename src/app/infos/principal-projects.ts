@@ -1,10 +1,10 @@
-import TecnomylImage from '@/app/assets/Tecnomyl.jpg';
-import EdebeImage from '@/app/assets/edebe.jpg';
-import EmbraerImage from '@/app/assets/embraer.png';
-import B2BbeeImage from '@/app/assets/b2bbee.png';
-import NcursosImage from '@/app/assets/ncursos.png';
-import ConectaFacensImage from '@/app/assets/conectaFacens.png';
-import JactoImage from '@/app/assets/jacto.png';
+import TecnomylImage from '@/app/assets/Tecnomyl.jpg'
+import EdebeImage from '@/app/assets/edebe.jpg'
+import EmbraerImage from '@/app/assets/embraer.png'
+import B2BbeeImage from '@/app/assets/b2bbee.png'
+import NcursosImage from '@/app/assets/ncursos.png'
+import ConectaFacensImage from '@/app/assets/conectaFacens.png'
+import JactoImage from '@/app/assets/jacto.png'
 
 export const projects = [
   {
@@ -95,4 +95,4 @@ export const projects = [
     frameworks: ['Front-end (Angular)', 'Back-end (NestJS)'],
     style: '',
   },
-];
+]

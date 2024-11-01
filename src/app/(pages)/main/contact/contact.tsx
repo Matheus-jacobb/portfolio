@@ -1,5 +1,5 @@
 import { ContactCard } from '@/app/(pages)/main/contact/contact-card/contact-card'
-import { socialMedia } from '@/app/infos/social-media';
+import { socialMedia } from '@/app/infos/social-media'
 import { faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons'

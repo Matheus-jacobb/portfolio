@@ -22,7 +22,9 @@ export function Experience({ className }: { className?: string }) {
               ${exp.specialLayout ? 'sm:!mb-[-6.7rem]' : undefined}
               `}
             >
-              <div className={`sm:w-1/2 w-[80vw] my-2 sm:my-0 pr-0 ${index % 2 === 0 ? 'sm:pr-4' : 'sm:pl-4'}`}>
+              <div
+                className={`sm:w-1/2 w-[80vw] my-2 sm:my-0 pr-0 ${index % 2 === 0 ? 'sm:pr-4' : 'sm:pl-4'}`}
+              >
                 <div className="timeline-content bg-accent bg-opacity-30 p-4 rounded-lg shadow-md">
                   <div className="timeline-date text-accent font-semibold mb-1">
                     {exp.date}
