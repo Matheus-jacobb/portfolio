@@ -1,38 +1,79 @@
-import { Chips } from '@/app/components/chips/chips'
+'use client'
+
+import { ProjectCard } from '@/app/(pages)/main/projects/project-card/project-card'
 import { projects } from '@/app/infos/principal-projects'
-import Image from 'next/image'
+import { Navigation, Autoplay, Pagination } from 'swiper/modules'
+import './styles.scss'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 export function Projects({ className }: { className?: string }) {
   return (
-    <section id="projects" className={'py-32 text-text h-screen ' + className}>
+    <section id="projects" className={'py-32 text-text ' + className}>
       <h2 className="text-center text-3xl font-semibold mb-12">
         Projetos Principais
       </h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {projects.map((project, idx) => (
-          <div
-            key={idx}
-            className="bg-secondary rounded-lg shadow-lg hover:transform hover:-translate-y-1 transition duration-300"
-          >
-            <Image
-              src={project.imgSrc}
-              alt={project.title}
-              className="w-full h-48 object-cover rounded-t-lg"
-            />
-            <div className="p-6">
-              <h3 className="text-accent text-xl font-semibold mb-2">
-                {project.title}
-              </h3>
-              <p className="mb-4 whitespace-pre-wrap">{project.description}</p>
-              <div className="flex gap-4">
-                {project.frameworks &&
-                  project.frameworks.map((framework, idx) => (
-                    <Chips key={idx} title={framework} className="text-sm" />
-                  ))}
-              </div>
-            </div>
-          </div>
-        ))}
+      <div className="max-w-7xl mx-auto relative">
+        <Swiper
+          navigation={{
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+          }}
+          autoplay={{
+            delay: 5000,
+            pauseOnMouseEnter: true,
+          }}
+          pagination={{
+            el: '.swiper-pagination',
+            bulletClass:
+              'swiper-pagination-bullet !bg-highlight opacity-50 !w-4 !h-4 !mx-3',
+            bulletActiveClass: '!opacity-100',
+            clickable: true,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              navigation: {
+                enabled: false,
+              },
+            },
+            850: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1220: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+          speed={600}
+          modules={[Navigation, Autoplay, Pagination]}
+          className={'mySwiper !mx-6 sm:!mx-14'}
+          slidesPerView={3}
+          spaceBetween={30}
+        >
+          {[...projects].map((project, idx) => (
+            <SwiperSlide
+              key={idx}
+              className={'!h-auto cursor-pointer select-none'}
+            >
+              <ProjectCard key={idx} project={project} idx={idx} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div
+          className="swiper-button-prev !text-highlight !hidden sm:!block"
+          style={{ left: '0' }}
+        ></div>
+        <div
+          className="swiper-button-next !text-highlight !hidden sm:!block"
+          style={{ right: '0' }}
+        ></div>
+        <div className="swiper-pagination" style={{ bottom: '-3rem' }}></div>
       </div>
     </section>
   )

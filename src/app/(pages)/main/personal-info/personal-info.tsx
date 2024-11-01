@@ -6,7 +6,7 @@ export function PersonalInfo({ className }: { className?: string }) {
     <section
       id="home"
       className={
-        'flex items-center justify-center h-screen bg-primary px-4 ' + className
+        'flex items-center justify-center min-h-screen bg-primary px-4 pt-4 pb-36 pb-0 sm:pt-32 md:pt-0 ' + className
       }
     >
       <div className="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto space-y-8 md:space-y-0 md:space-x-12">
@@ -24,11 +24,14 @@ export function PersonalInfo({ className }: { className?: string }) {
             <p className="mt-4  text-end text-sm">- Stephen Hawking</p>
           </div>
         </div>
-        <div className="md:w-1/2">
+        <div className="sm:w-1/2 w-3/4 max-w-6xl lg:max-w-none">
           <Image
             src={Me}
             alt="Imagem de Matheus Jacob Bendel"
-            className="float rounded-full w-{34rem} h-{34rem} object-cover shadow-2xl transition-transform duration-300 transform hover:scale-105 bg-accent bg-opacity-5"
+            style={{
+              boxShadow: '8px 8px 60px -29px #c961de',
+            }}
+            className="float rounded-full aspect-square object-cover transition-transform duration-300 bg-accent bg-opacity-5"
           />
         </div>
       </div>

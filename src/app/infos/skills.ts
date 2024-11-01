@@ -4,7 +4,8 @@ export const skills = [
     items: [
       'Angular',
       'Ionic',
-      'React.js',
+      'ReactJS',
+      'NextJS',
       'TypeScript',
       'Tailwind',
       'Sass/Less',

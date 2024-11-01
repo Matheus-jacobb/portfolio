@@ -7,18 +7,22 @@ export function Experience({ className }: { className?: string }) {
       <h2 className="text-3xl text-center mb-8">Experiência</h2>
       <div className="relative max-w-3xl mx-auto">
         <div className="timeline relative">
-          <div className="absolute left-1/2 w-1 bg-accent h-full transform -translate-x-1/2"></div>
+          <div
+            className="absolute sm:left-1/2 left-5 w-1 bg-accent h-full transform -translate-x-1/2"
+            style={{
+              boxShadow: 'rgb(201, 97, 222) 0px 0px 9px 0px',
+            }}
+          ></div>
 
-          {/* Mapear os itens de experiência */}
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`timeline-item flex justify-${index % 2 === 0 ? 'start' : 'end'} mb-10`}
-              style={
-                exp.specialLayout ? { marginBottom: '-6.7rem' } : undefined
-              }
+              className={`timeline-item flex justify-center sm:!mb-10
+              ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}
+              ${exp.specialLayout ? 'sm:!mb-[-6.7rem]' : undefined}
+              `}
             >
-              <div className={`w-1/2 ${index % 2 === 0 ? 'pr-4' : 'pl-4'}`}>
+              <div className={`sm:w-1/2 w-[80vw] my-2 sm:my-0 pr-0 ${index % 2 === 0 ? 'sm:pr-4' : 'sm:pl-4'}`}>
                 <div className="timeline-content bg-accent bg-opacity-30 p-4 rounded-lg shadow-md">
                   <div className="timeline-date text-accent font-semibold mb-1">
                     {exp.date}
