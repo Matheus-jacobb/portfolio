@@ -1,5 +1,5 @@
 import NextJsImage from '@/app/assets/next-js.png'
-import ReactImage from '@/app/assets/React.png'
+import ReactImage from '@/app/assets/react.png'
 import TailwindImage from '@/app/assets/tailwind.webp'
 import Image from 'next/image'
 import Link from 'next/link'
