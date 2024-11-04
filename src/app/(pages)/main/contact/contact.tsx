@@ -15,7 +15,7 @@ export function Contact({ className }: { className?: string }) {
           title="WhatsApp"
           icon={faWhatsapp}
           description="Mensagem direto"
-          link={socialMedia.Linkedin.url}
+          link={socialMedia.Whatsapp.url}
         />
         <ContactCard
           title="E-mail"
