@@ -19,7 +19,7 @@ export function Experience({ className }: { className?: string }) {
               key={index}
               className={`timeline-item flex justify-center sm:!mb-10
               ${index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'}
-              ${exp.specialLayout ? 'sm:!mb-[-6.7rem]' : undefined}
+              ${exp?.specialLayout ? 'sm:!mb-[-6.7rem]' : undefined}
               `}
             >
               <div
