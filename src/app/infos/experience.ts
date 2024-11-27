@@ -9,7 +9,16 @@ export const experiences = [
   //   frameworks: ['ReactJS'],
   // },
   {
-    date: '2021 - atualmente',
+    date: '2024 - atualmente',
+    title: 'Desenvolvedor Full-stack Senior',
+    company: 'LIGA',
+    description:
+      'Adquirindo experiência em desenvolvimento front-end com Angular 2+ e Ionic. Também usando NestJS como desenvolvimento de API.',
+    frameworks: ['Angular', 'ReactJS', 'Ionic', 'NestJS'],
+    specialLayout: false,
+  },
+  {
+    date: '2023 - 2024',
     title: 'Desenvolvedor Full-stack Pleno',
     company: 'LIGA',
     description:
@@ -18,7 +27,7 @@ export const experiences = [
     specialLayout: false,
   },
   {
-    date: '2021 - 2022',
+    date: '2022 - 2023',
     title: 'Desenvolvedor Full-stack Jr.',
     company: 'LIGA',
     description:
