@@ -18,14 +18,15 @@ export function Projects({ className }: { className?: string }) {
       </h2>
       <div className="max-w-7xl mx-auto relative">
         <Swiper
+          loop
           navigation={{
             prevEl: '.swiper-button-prev',
             nextEl: '.swiper-button-next',
           }}
-          autoplay={{
-            delay: 5000,
-            pauseOnMouseEnter: true,
-          }}
+          // autoplay={{
+          //   delay: 5000,
+          //   pauseOnMouseEnter: true,
+          // }}
           pagination={{
             el: '.swiper-pagination',
             bulletClass:
@@ -46,7 +47,7 @@ export function Projects({ className }: { className?: string }) {
               spaceBetween: 40,
             },
             1220: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 30,
             },
           }}

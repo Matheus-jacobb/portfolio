@@ -10,13 +10,13 @@ export function About({ className }: { className?: string }) {
           <strong>Engenharia da Computação</strong>.
         </p>
         <p className="text-lg leading-relaxed">
-          Sou desenvolvedor full stack pleno e líder de equipe, com experiência
-          em <strong>React</strong> e especialização em <strong>Angular</strong>
+          Sou desenvolvedor full stack sênior, com experiência
+          em <strong>NestJS</strong>, <strong>Angular</strong> e <strong>React</strong>
           . Também atuei como <strong>Tech Lead</strong>, focando em soluções
           ágeis e interfaces de alta performance.
         </p>
         <p className="text-lg leading-relaxed">
-          Participei do desenvolvimento de mais de <strong>10 softwares</strong>{' '}
+          Participei do desenvolvimento de mais de <strong>10 softwares</strong>
           , sempre buscando entregar produtos que superem expectativas. Acredito
           que minhas habilidades técnicas e experiência em liderança agregam
           valor a qualquer equipe.

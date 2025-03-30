@@ -1,6 +1,6 @@
 import NextJsImage from '@/app/assets/next-js.png'
 import ReactImage from '@/app/assets/react.png'
-import TailwindImage from '@/app/assets/tailwind.webp'
+import TailwindImage from '@/app/assets/tailwind.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import './styles.scss'

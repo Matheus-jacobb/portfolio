@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react'
-import { debounce } from 'next/dist/server/utils' // Certifique-se de que isso está funcionando corretamente
+import { debounce } from 'next/dist/server/utils'
 
 export default function Scroller({ children }: { children: React.ReactNode }) {
   const containerRef = useRef<HTMLDivElement | null>(null)
@@ -12,7 +12,6 @@ export default function Scroller({ children }: { children: React.ReactNode }) {
     if (!container) return
 
     const handleWheel = debounce((e: WheelEvent) => {
-      // Defina o tipo do evento
       e.preventDefault()
       const delta = e.deltaY * 0.8
 
