@@ -24,7 +24,7 @@ export function ProjectCard({
         height={800}
         quality={100}
         className={
-          'w-full h-full object-cover object-top rounded-t-lg bg-white transition duration-300 ' +
+          'w-full h-full object-cover object-top rounded-t-lg transition duration-300 bg-primary ' +
           project.style
         }
       />
