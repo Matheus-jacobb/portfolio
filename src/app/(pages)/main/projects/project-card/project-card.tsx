@@ -30,13 +30,13 @@ export function ProjectCard({
       />
       <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <div className="absolute bottom-4 left-1/1 -translate-x-1/2 sm:left-1/2 sm:-translate-x-1/2 right-4 sm:right-auto text-white/70 group-hover:opacity-0 transition-opacity duration-300 z-20">
-        <FontAwesomeIcon 
-          icon={faChevronDown} 
-          className="h-6 w-6 animate-bounce hidden sm:block text-white/70" 
+        <FontAwesomeIcon
+          icon={faChevronDown}
+          className="h-6 w-6 animate-bounce hidden sm:block text-white/70"
         />
-        <FontAwesomeIcon 
-          icon={faHandPointer} 
-          className="h-6 w-6 animate-bounce sm:hidden text-accent" 
+        <FontAwesomeIcon
+          icon={faHandPointer}
+          className="h-6 w-6 animate-bounce sm:hidden text-accent"
         />
       </div>
       <div className="p-6 flex flex-col flex-grow absolute bottom-0 left-0 right-0 bg-secondary transform translate-y-[calc(100%-12rem)] sm:translate-y-[calc(100%-8rem)] group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-10">
