@@ -18,7 +18,7 @@ export function PersonalInfo({ className }: { className?: string }) {
           <p className="mt-4 text-lg text-accent md:text-xl text-center md:text-left">
             Desenvolvedor Full Stack
           </p>
-          <div className="mt-16 text-lg text-accent md:text-xl text-center md:text-left bg-white bg-opacity-10 rounded-lg p-5 text-center text-white">
+          <div className="mt-16 text-lg md:text-xl md:text-left bg-white bg-opacity-10 rounded-lg p-5 text-center text-white">
             <p>
               &#34;Inteligência é a capacidade de se adaptar à mudança.&#34;
             </p>

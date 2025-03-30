@@ -10,10 +10,10 @@ export function About({ className }: { className?: string }) {
           <strong>Engenharia da Computação</strong>.
         </p>
         <p className="text-lg leading-relaxed">
-          Sou desenvolvedor full stack sênior, com experiência
-          em <strong>NestJS</strong>, <strong>Angular</strong> e <strong>React</strong>
-          . Também atuei como <strong>Tech Lead</strong>, focando em soluções
-          ágeis e interfaces de alta performance.
+          Sou desenvolvedor full stack sênior, com experiência em{' '}
+          <strong>NestJS</strong>, <strong>Angular</strong> e{' '}
+          <strong>React</strong>. Também atuei como <strong>Tech Lead</strong>,
+          focando em soluções ágeis e interfaces de alta performance.
         </p>
         <p className="text-lg leading-relaxed">
           Participei do desenvolvimento de mais de <strong>10 softwares</strong>
