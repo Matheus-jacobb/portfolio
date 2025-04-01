@@ -15,7 +15,7 @@ export function ProjectCard({
   return (
     <div
       key={idx}
-      className="bg-secondary rounded-lg shadow-lg h-[32rem] group flex flex-col relative overflow-hidden"
+      className="bg-secondary rounded-lg shadow-lg h-[32rem] group flex flex-col relative overflow-hidden p-[2px]"
     >
       <Image
         src={project.imgSrc}
@@ -24,7 +24,7 @@ export function ProjectCard({
         height={800}
         quality={100}
         className={
-          'w-full h-full object-cover object-top rounded-t-lg transition duration-300 bg-primary ' +
+          'w-full h-full object-cover object-top transition duration-300 bg-primary rounded-t-lg ' +
           project.style
         }
       />
@@ -34,12 +34,8 @@ export function ProjectCard({
           icon={faChevronDown}
           className="h-6 w-6 animate-bounce hidden sm:block text-white/70"
         />
-        <FontAwesomeIcon
-          icon={faHandPointer}
-          className="h-6 w-6 animate-bounce sm:hidden text-accent"
-        />
       </div>
-      <div className="p-6 flex flex-col flex-grow absolute bottom-0 left-0 right-0 bg-secondary transform translate-y-[calc(100%-12rem)] sm:translate-y-[calc(100%-8rem)] group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-10">
+      <div className="p-6 flex flex-col flex-grow absolute bottom-0 left-0 right-0 bg-secondary transform translate-y-0 sm:translate-y-[calc(100%-8rem)] group-hover:translate-y-0 transition-transform duration-300 ease-in-out z-10">
         <div className="flex flex-col">
           <h3 className="text-accent text-xl font-semibold mb-2">
             {project.title}
@@ -51,7 +47,7 @@ export function ProjectCard({
               ))}
           </div>
         </div>
-        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="sm:opacity-0 sm:group-hover:opacity-100 sm:transition-opacity sm:duration-300">
           <p className="whitespace-pre-wrap flex-grow max-h-[12.7rem] overflow-y-auto sm:max-h-none">
             {project.description}
           </p>

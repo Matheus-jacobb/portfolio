@@ -46,7 +46,7 @@ export function Footer({ className }: { className?: string }) {
         </Link>
       </div>
       <p className="text-center text-gray-500">
-        © 2024 Matheus Jacob Bendel. Todos os direitos reservados.
+        {`© ${new Date().getFullYear()} Matheus Jacob Bendel. Todos os direitos reservados.`}
       </p>
     </footer>
   )
