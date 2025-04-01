@@ -2,7 +2,7 @@ import { Chips } from '@/app/components/chips/chips'
 import { projects } from '@/app/infos/principal-projects'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faHandPointer } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import './styles.scss'
 
 export function ProjectCard({
