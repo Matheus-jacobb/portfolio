@@ -2,12 +2,21 @@ export const experiences = [
   {
     date: `${new Date().getFullYear()} - atualmente`,
     title: 'Desenvolvedor Full-stack Senior',
+    company: 'TOTVS',
+    description:
+      'Adquirindo experiência em desenvolvimento front-end com Angular 2+ e Ionic. Também usando NestJS como desenvolvimento de API.',
+    frameworks: ['Angular', 'Java'],
+    specialLayout: false,
+  },
+  {
+    date: `2024-2025`,
+    title: 'Desenvolvedor Full-stack Senior',
     company: 'LIGA',
     description:
       'Adquirindo experiência em desenvolvimento front-end com Angular 2+ e Ionic. Também usando NestJS como desenvolvimento de API.',
-    frameworks: ['Angular', 'ReactJS', 'Ionic', 'NestJS'],
+    frameworks: ['Angular', 'React', 'Ionic', 'NestJs'],
     specialLayout: false,
-  },
+  
   {
     date: '2023 - 2024',
     title: 'Desenvolvedor Full-stack Pleno',
