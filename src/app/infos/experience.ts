@@ -16,7 +16,7 @@ export const experiences = [
       'Adquirindo experiência em desenvolvimento front-end com Angular 2+ e Ionic. Também usando NestJS como desenvolvimento de API.',
     frameworks: ['Angular', 'React', 'Ionic', 'NestJs'],
     specialLayout: false,
-  
+  }
   {
     date: '2023 - 2024',
     title: 'Desenvolvedor Full-stack Pleno',
